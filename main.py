@@ -9,7 +9,7 @@ class SMTPServer:
         self.host = host
         self.port = port
         self.smtp = smtplib.SMTP(host, port)
-        self.smtp.set_debuglevel(1)
+        self.smtp.set_debuglevel(1) 
     
     def connect(self , email, password):
         try:
@@ -44,4 +44,4 @@ if __name__  == '__main__':
     mySMTP.disconnect
     
     log_file.close()
-    sys.stderr = original_stderr
+    sys.stderr = original_stderr 
